@@ -1,3 +1,47 @@
 :root {
+    --main-color: #FA7268;
+    --secondary-color: #C62368;
+    --main-font:'Montserrat', sans-serif;
+    --secondary-font: 'Open Sans Condensed', sans-serif;
+    color: white;
+    background-color: #001220;
     
 }
+
+
+
+h1 {
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 4rem;
+}
+
+p {
+    font-family: var(--secondary-font);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.sec1 {
+    aspect-ratio: 960/300;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./content/layered-waves-haikei.svg);
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
