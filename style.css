@@ -5,7 +5,6 @@
     --secondary-font: 'Open Sans Condensed', sans-serif;
     color: white;
     background-color: #001220;
-    
 }
 
 
@@ -14,12 +13,18 @@ h1 {
     text-align: center;
     font-family: var(--main-font);
     font-size: 4rem;
+    text-shadow: 0.25rem 0.25rem 0 black;
+}
+
+h1:hover {
+    text-decoration: underline;
 }
 
 p {
     font-family: var(--secondary-font);
     text-align: center;
     font-size: 2rem;
+    text-shadow: 0.25rem 0.25rem 0 hsl(263, 100%, 50%);
 }
 
 .sec1 {
@@ -39,9 +44,153 @@ body {
     padding: 0;
 }
 
-section {
+  .sec2 {
+    aspect-ratio: 960/300;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./content/low-poly-grid-haikei.svg);
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  .sec3 {
+    aspect-ratio: 960/300;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: gre;
+    margin: 0;
+    padding: 0;
+    background: url(./content/stacked-waves-haikei.svg);
+  }
+
+  .sec4 {
+    aspect-ratio: 960/300;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background: url(./content/layered-steps-haikei.svg);
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+  #sig {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: sign 4s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sign {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+svg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 10rem;
+}
+
+.shape {
+    width: 6.25rem;
+    height: 6.25rem;
+    background: hsla(167, 100%, 50%, 0.719);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transition: 3000ms;
+    transition-property: background, transform;
+}
+
+.shape:hover {
+    transform: rotate(180deg);
+    background: hsl(167, 100%, 50%);
+}
+
+.circle {
+    background: hsla(167, 100%, 50%, 0.719);
+    border-radius: 50%;
+    width: 6.25rem;
+    height: 6.25rem;
+    transition: 2000ms;
+    transition-property: background;
+}
+
+.circle:hover {
+    background: hsl(167, 100%, 50%);
+}
+
+.sec5 {
+    aspect-ratio: 960/300;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(#FA7268, #C62368 );
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    width: 6.25rem;
+    height: 50rem;
+    background: linear-gradient(
+       90deg, green, rgb(0, 255, 242)
+    );
+    transition: 700ms;
+    transition-property: width,;
+    transition-timing-function: ease;
+}
+
+.background:hover {
+    width: 20.75rem;
+}
+
+.sec6 {
+    aspect-ratio: 960/300;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: url(./content/stacked-steps-haikei\(1\).svg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grsblk {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    background-image: linear-gradient(
+        rgb(75, 126, 8) 0 20px,
+        hsl(37, 91%, 25%) 0 30px
+    );
+    transition: 2000ms;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.grsblk:hover {
+    transform: rotate(360deg);
+}
+
